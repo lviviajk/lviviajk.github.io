@@ -102,3 +102,17 @@ h2 {
     margin-top: 50px;
     font-size: 18px;
 }
+
+.project-pictures {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.project-pictures img {
+    width: 23%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+}
