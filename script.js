@@ -1,22 +1,18 @@
-function toggleDropdown() {
-    document
-        .getElementById("projectDropdown")
-        .classList.toggle("show");
+function showProjects() {
+    var projects = document.getElementById("projects");
+
+    if (projects.style.display == "block") {
+        projects.style.display = "none";
+    } else {
+        projects.style.display = "block";
+    }
 }
 
 
-/* Close dropdown if you click somewhere else */
+function duckClick(duck) {
+    duck.style.transform = "rotate(20deg)";
 
-window.onclick = function(event) {
-
-    if (!event.target.matches(".project-button")) {
-
-        let dropdown = document.getElementById("projectDropdown");
-
-        if (dropdown.classList.contains("show")) {
-            dropdown.classList.remove("show");
-        }
-
-    }
-
-};
+    setTimeout(function() {
+        duck.style.transform = "rotate(0deg)";
+    }, 300);
+}
