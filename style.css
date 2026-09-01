@@ -45,33 +45,36 @@ h2 {
     position: fixed;
     top: 20px;
     left: 20px;
+    z-index: 10;
 }
 
-.menu button {
-    background: #ffe58a;
-    border: 2px solid #d9bb55;
-    border-radius: 15px;
-    padding: 10px 15px;
-    font-size: 16px;
+.menu-duck {
+    width: 60px;
     cursor: pointer;
+}
+
+.menu-duck:hover {
+    transform: scale(1.1);
 }
 
 #projects {
     display: none;
-    background: white;
+    background: #fffdf0;
     border: 2px solid #e8d477;
     border-radius: 12px;
+    padding: 12px;
     margin-top: 5px;
-    padding: 10px;
+    width: 180px;
 }
 
 #projects a {
     color: #5c4b32;
     text-decoration: none;
+    font-weight: bold;
 }
 
 #projects a:hover {
-    text-decoration: underline;
+    color: #a58a48;
 }
 
 .duck {
