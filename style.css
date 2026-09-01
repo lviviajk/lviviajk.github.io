@@ -1,325 +1,101 @@
-/* -------------------------
-   GENERAL PAGE
-------------------------- */
-
 body {
+    background: #fff8d6;
+    color: #5c4b32;
+    font-family: Arial, sans-serif;
     margin: 0;
-    font-family: "Caveat;
-
-    background-color: #fff8d6;
-    color: #5c4b32;
-
-    min-height: 100vh;
 }
 
-
-/* -------------------------
-   NAVIGATION BAR
-------------------------- */
-
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-
-    padding: 18px 25px;
-
-    z-index: 100;
-}
-
-
-/* Projects button */
-
-.project-button {
-    background-color: #ffe58a;
-
-    border: 3px solid #e8c95a;
-    border-radius: 20px;
-
-    padding: 10px 18px;
-
-    font-size: 16px;
-    font-weight: bold;
-
-    color: #5c4b32;
-
-    cursor: pointer;
-
-    box-shadow: 0 4px 0 #d9b94d;
-
-    transition: 0.2s;
-}
-
-.project-button:hover {
-    transform: translateY(-2px);
-}
-
-
-/* -------------------------
-   DROPDOWN
-------------------------- */
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-
-.dropdown-content {
-    display: none;
-
-    position: absolute;
-
-    top: 50px;
-    left: 0;
-
-    min-width: 220px;
-
-    background-color: #fffdf0;
-
-    border: 3px solid #e8c95a;
-    border-radius: 15px;
-
-    box-shadow: 0 6px 15px rgba(100, 80, 20, 0.15);
-
-    overflow: hidden;
-}
-
-
-/* Dropdown links */
-
-.dropdown-content a {
-    display: block;
-
-    padding: 14px 16px;
-
-    color: #5c4b32;
-
-    text-decoration: none;
-
-    font-weight: bold;
-}
-
-
-/* Hover effect */
-
-.dropdown-content a:hover {
-    background-color: #fff0a8;
-}
-
-
-/* This class gets added by JavaScript */
-
-.show {
-    display: block;
-}
-
-
-/* -------------------------
-   MAIN CONTENT
-------------------------- */
-
-main {
-    padding-top: 100px;
-}
-
-
-.about {
-    max-width: 850px;
-
-    margin: auto;
-
-    padding: 40px 25px 80px;
-
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 100px auto;
     text-align: center;
 }
-
-
-/* -------------------------
-   TITLE
-------------------------- */
 
 h1 {
-    font-size: 48px;
-
+    font-size: 45px;
     color: #80652c;
-
-    margin-bottom: 5px;
 }
 
+h2 {
+    color: #80652c;
+}
 
-.subtitle {
-    font-size: 19px;
-
+.intro {
     color: #a58a48;
-
-    margin-bottom: 40px;
+    font-size: 18px;
 }
-
-
-/* -------------------------
-   CARDS
-------------------------- */
 
 .card {
-    background-color: #fffdf0;
-
-    border: 3px solid #f0d77a;
-
-    border-radius: 25px;
-
-    padding: 30px;
-
+    background: #fffdf0;
+    border: 2px solid #e8d477;
+    border-radius: 20px;
+    padding: 25px;
     margin: 25px 0;
-
     text-align: left;
-
-    box-shadow: 0 6px 0 #ead47b;
 }
 
-
-.card h2 {
-    color: #80652c;
-
-    margin-top: 0;
-
-    font-size: 27px;
-}
-
-
-.card p {
+.card p,
+.card li {
     font-size: 17px;
-
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
-
-/* -------------------------
-   INTERESTS
-------------------------- */
-
-.interests {
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 15px;
+.menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
 }
 
-
-.interest {
-    background-color: #fff4b8;
-
-    border-radius: 18px;
-
-    padding: 15px;
-
-    font-size: 25px;
-
-    text-align: center;
+.menu button {
+    background: #ffe58a;
+    border: 2px solid #d9bb55;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-
-.interest span {
-    display: block;
-
-    font-size: 15px;
-
+#projects {
+    display: none;
+    background: white;
+    border: 2px solid #e8d477;
+    border-radius: 12px;
     margin-top: 5px;
-
-    font-weight: bold;
+    padding: 10px;
 }
 
-
-/* -------------------------
-   GOALS
-------------------------- */
-
-li {
-    margin: 12px 0;
-
-    font-size: 17px;
+#projects a {
+    color: #5c4b32;
+    text-decoration: none;
 }
 
-
-/* -------------------------
-   DUCKS
-------------------------- */
+#projects a:hover {
+    text-decoration: underline;
+}
 
 .duck {
     position: fixed;
-
-    font-size: 32px;
-
-    z-index: 1;
-
-    pointer-events: none;
+    width: 45px;
+    cursor: pointer;
 }
-
 
 .duck1 {
     top: 25%;
     left: 5%;
 }
 
-
 .duck2 {
     top: 55%;
     right: 5%;
 }
 
-
 .duck3 {
-    bottom: 15%;
+    bottom: 10%;
     left: 8%;
 }
 
-
-.duck4 {
-    top: 75%;
-    right: 10%;
-}
-
-
-.duck-decoration {
-    font-size: 55px;
-
-    margin-bottom: -10px;
-}
-
-
-.bottom-duck {
+.bottom {
     margin-top: 50px;
-
-    font-size: 45px;
-}
-
-
-.bottom-duck span {
-    font-size: 15px;
-
-    color: #a58a48;
-}
-
-
-/* -------------------------
-   MOBILE
-------------------------- */
-
-@media (max-width: 600px) {
-
-    h1 {
-        font-size: 36px;
-    }
-
-    .interests {
-        grid-template-columns: 1fr;
-    }
-
-    .duck {
-        display: none;
-    }
-
+    font-size: 18px;
 }
