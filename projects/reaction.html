@@ -1,305 +1,339 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Arduino Reaction Time Game</title>
+
     <link rel="stylesheet" href="../style.css">
+
 </head>
+
 
 <body>
 
 <div class="menu">
 
-    <img src="../images/duck.png" class="menu-duck" onclick="showProjects()">
+    <a href="../index.html">
+        <img src="../images/duck.png" class="menu-duck">
+    </a>
 
-    <div id="speech">Projects!</div>
-
-    <div id="projects">
-        <a href="cardboard.html">Cardboard Stuff</a>
-        <a href="reaction.html">Reaction Time Game</a>
+    <div class="back-text">
+        Home
     </div>
 
 </div>
-    
-<div class="container">
 
-    <h1>Arduino Reaction Time Game</h1>
 
-    <div class="card">
-        <h2>Project Overview</h2>
+    <main>
 
-        <p>
-            For my Arduino final project, I made a reaction-time game.
-            The game uses LEDs, a button, and a display to measure how
-            quickly someone can react. The Arduino records the time
-            between the start of the game and when the button is pressed,
-            then shows the reaction time on the display.
-        </p>
+        <section class="about">
 
-        <p>
-            [BIG PROJECT PHOTO HERE]
-        </p>
+            <div class="duck-decoration">
+                
+            </div>
 
-        <p>
-            [VIDEO OF PROJECT WORKING HERE]
-        </p>
-    </div>
+            <h1>Arduino Reaction Time Game</h1>
 
+            <p class="subtitle">
+                An Arduino project
+            </p>
 
-    <div class="card">
-        <h2>1. Why I Chose This Project</h2>
 
-        <p>
-            I chose this project because I wanted to build something
-            interactive instead of just having an LED turn on and off.
-            I had already worked with LEDs and buttons, so I wanted to
-            combine those skills with a display and use them to make
-            something that actually responds to the user.
-        </p>
-    </div>
+            <div class="card">
 
+                <h2>Project Overview</h2>
 
-    <div class="card">
-        <h2>2. Building the Circuit</h2>
+                <p>
+                    For my Arduino final project, I made a reaction-time game.
+                    The game uses a green LED, a red LED, a button, and a display
+                    to measure how quickly someone can react. The Arduino records
+                    the reaction time and shows the result on the display.
+                </p>
 
-        <h3>Starting the Circuit</h3>
+                <div class="project-pictures">
 
-        <p>
-            [EARLY CIRCUIT PHOTO HERE]
-        </p>
+                    <img src="../images/reaction-final.jpeg">
 
-        <p>
-            I started with a simple circuit so I could make sure the
-            basic parts were working before adding everything else.
-        </p>
+                </div>
 
+                <p>
+                    [VIDEO OF PROJECT WORKING HERE]
+                </p>
 
-        <h3>Adding the LEDs and Button</h3>
+            </div>
 
-        <p>
-            [LED AND BUTTON PHOTO HERE]
-        </p>
 
-        <p>
-            I added the LEDs and button to make the circuit interactive.
-            The LEDs show different parts of the game, while the button
-            is used to record the player's reaction.
-        </p>
+            <div class="card">
 
+                <h2>Why I Chose This Project</h2>
 
-        <h3>Adding the Display</h3>
+                <p>
+                    I chose this project because I wanted to build something
+                    interactive instead of just having an LED turn on and off.
+                    I had already worked with LEDs and buttons, so I wanted to
+                    combine those skills with a display and make something that
+                    actually responds to the user.
+                </p>
 
-        <p>
-            [DISPLAY PHOTO HERE]
-        </p>
+            </div>
 
-        <p>
-            The display was one of the newer parts of the project for me.
-            I had to figure out how its pins worked and how to control
-            the different parts of the display with the Arduino.
-        </p>
 
+            <div class="card">
 
-        <h3>Testing the Display</h3>
+                <h2>Building the Circuit</h2>
 
-        <p>
-            [DISPLAY TEST CODE PHOTO HERE]
-        </p>
+                <h3>Starting the Circuit</h3>
 
-        <p>
-            I also wrote a small test program to figure out which pins
-            controlled each line of the display. I turned different
-            lines on one at a time and used the results to figure out
-            how the display was wired.
-        </p>
+                <p>
+                    [EARLY CIRCUIT PHOTO HERE]
+                </p>
 
+                <p>
+                    I started with a simple circuit so I could make sure the
+                    basic parts were working before adding everything else.
+                </p>
 
-        <h3>Complete Circuit</h3>
 
-        <p>
-            [COMPLETED CIRCUIT PHOTO HERE]
-        </p>
+                <h3>Adding the LEDs and Button</h3>
 
-        <p>
-            Once everything was connected, I could move on to programming
-            and testing the full game.
-        </p>
+                <p>
+                    [LED AND BUTTON PHOTO HERE]
+                </p>
 
-    </div>
+                <p>
+                    I added the LEDs and button to make the circuit interactive.
+                    The LEDs show different parts of the game, while the button
+                    is used to record the player's reaction.
+                </p>
 
 
-    <div class="card">
-        <h2>3. Programming the Game</h2>
+                <h3>Adding the Display</h3>
 
-        <h3>Controlling the LEDs</h3>
+                <p>
+                    [DISPLAY PHOTO HERE]
+                </p>
 
-        <p>
-            [LED CODE PHOTO HERE]
-        </p>
+                <p>
+                    The display was one of the newer parts of the project for me.
+                    I had to figure out how its pins worked and how to control
+                    the different parts of the display with the Arduino.
+                </p>
 
-        <p>
-            The green and red LEDs are used to show different states
-            of the game. This makes it easier to tell when the game
-            starts and when a reaction has been recorded.
-        </p>
 
+                <h3>Testing the Display</h3>
 
-        <h3>Reading the Button</h3>
+                <p>
+                    [DISPLAY TEST CODE PHOTO HERE]
+                </p>
 
-        <p>
-            [BUTTON CODE PHOTO HERE]
-        </p>
+                <p>
+                    I also wrote a small test program to figure out which pins
+                    controlled each line of the display. I turned different
+                    lines on one at a time and used the results to figure out
+                    how the display was wired.
+                </p>
 
-        <p>
-            The Arduino checks the button to detect when the player
-            presses it. That press is what tells the program to record
-            the end of the reaction time.
-        </p>
 
+                <h3>Complete Circuit</h3>
 
-        <h3>Measuring Reaction Time</h3>
+                <p>
+                    [COMPLETED CIRCUIT PHOTO HERE]
+                </p>
 
-        <p>
-            [REACTION TIME CODE PHOTO HERE]
-        </p>
+                <p>
+                    Once everything was connected, I could move on to
+                    programming and testing the full game.
+                </p>
 
-        <p>
-            The basic process is:
-        </p>
+            </div>
 
-        <p>
-            Start time → Player waits → Button pressed →
-            End time → Reaction time
-        </p>
 
-        <p>
-            The Arduino subtracts the starting time from the time when
-            the button was pressed to calculate the reaction time.
-        </p>
+            <div class="card">
 
+                <h2>Programming the Game</h2>
 
-        <h3>Showing the Result on the Display</h3>
+                <h3>Controlling the LEDs</h3>
 
-        <p>
-            [DISPLAY CODE PHOTO HERE]
-        </p>
+                <p>
+                    [LED CODE PHOTO HERE]
+                </p>
 
-        <p>
-            After calculating the reaction time, the program sends the
-            result to the display so the player can see their score.
-        </p>
+                <p>
+                    The green and red LEDs show different states of the game.
+                    This makes it easier to tell when the game starts and when
+                    a reaction has been recorded.
+                </p>
 
-    </div>
 
+                <h3>Reading the Button</h3>
 
-    <div class="card">
-        <h2>4. Debugging / What Didn't Work</h2>
+                <p>
+                    [BUTTON CODE PHOTO HERE]
+                </p>
 
-        <h3>The Problem</h3>
+                <p>
+                    The Arduino checks the button to detect when the player
+                    presses it. That press tells the program to record the
+                    end of the reaction time.
+                </p>
 
-        <p>
-            [ADD YOUR REAL PROBLEM HERE]
-        </p>
 
-        <h3>What I Tried</h3>
+                <h3>Measuring Reaction Time</h3>
 
-        <p>
-            [ADD WHAT YOU TRIED HERE]
-        </p>
+                <p>
+                    [REACTION TIME CODE PHOTO HERE]
+                </p>
 
-        <h3>What I Changed</h3>
+                <p>
+                    The basic process is:
+                </p>
 
-        <p>
-            [ADD WHAT YOU CHANGED HERE]
-        </p>
+                <p>
+                    Start time → Player waits → Button pressed →
+                    End time → Reaction time
+                </p>
 
-        <h3>What Happened</h3>
+                <p>
+                    The Arduino subtracts the starting time from the time when
+                    the button was pressed to calculate the reaction time.
+                </p>
 
-        <p>
-            [ADD WHAT HAPPENED AFTERWARD HERE]
-        </p>
 
-    </div>
+                <h3>Showing the Result on the Display</h3>
 
+                <p>
+                    [DISPLAY CODE PHOTO HERE]
+                </p>
 
-    <div class="card">
-        <h2>5. Technical Tidbit: How Reaction Time Is Measured</h2>
+                <p>
+                    After calculating the reaction time, the program sends
+                    the result to the display so the player can see their score.
+                </p>
 
-        <p>
-            The Arduino measures reaction time by recording a starting
-            time and then recording another time when the player presses
-            the button. It subtracts the two times to find the amount
-            of time the player took to react.
-        </p>
+            </div>
 
-        <p>
-            GAME STARTS
-            ↓
-            Starting time recorded
-            ↓
-            Player waits
-            ↓
-            Button pressed
-            ↓
-            Button press time recorded
-            ↓
-            Times are subtracted
-            ↓
-            Reaction time calculated
-            ↓
-            Result shown on display
-        </p>
 
-        <p>
-            Source: [ADD SOURCE LINK HERE]
-        </p>
+            <div class="card">
 
-    </div>
+                <h2>Debugging / What Didn't Work</h2>
 
+                <h3>The Problem</h3>
 
-    <div class="card">
-        <h2>6. Peer Support</h2>
+                <p>
+                    [ADD YOUR REAL PROBLEM HERE]
+                </p>
 
-        <p>
-            [ADD YOUR REAL PEER SUPPORT EXAMPLE HERE]
-        </p>
+                <h3>What I Tried</h3>
 
-    </div>
+                <p>
+                    [ADD WHAT YOU TRIED HERE]
+                </p>
 
+                <h3>What I Changed</h3>
 
-    <div class="card">
-        <h2>7. Use-Case Reflection</h2>
+                <p>
+                    [ADD WHAT YOU CHANGED HERE]
+                </p>
 
-        <p>
-            [WRITE YOUR FIRST REFLECTION PARAGRAPH HERE]
-        </p>
+                <h3>What Happened</h3>
 
-        <p>
-            [WRITE YOUR SECOND REFLECTION PARAGRAPH HERE]
-        </p>
+                <p>
+                    [ADD WHAT HAPPENED AFTERWARD HERE]
+                </p>
 
-        <p>
-            [WRITE YOUR THIRD REFLECTION PARAGRAPH HERE]
-        </p>
+            </div>
 
-    </div>
 
+            <div class="card">
 
-    <div class="card">
-        <h2>8. What I Learned / What I'd Change</h2>
+                <h2>Technical Tidbit</h2>
 
-        <p>
-            [WRITE YOUR FINAL REFLECTION HERE]
-        </p>
+                <p>
+                    The Arduino measures reaction time by recording a starting
+                    time and then recording another time when the player presses
+                    the button. It subtracts the two times to find how long the
+                    player took to react.
+                </p>
 
-    </div>
+                <p>
+                    GAME STARTS<br>
+                    ↓<br>
+                    Starting time recorded<br>
+                    ↓<br>
+                    Player waits<br>
+                    ↓<br>
+                    Button pressed<br>
+                    ↓<br>
+                    Button press time recorded<br>
+                    ↓<br>
+                    Times are subtracted<br>
+                    ↓<br>
+                    Reaction time calculated<br>
+                    ↓<br>
+                    Result shown on display
+                </p>
 
+                <p>
+                    Source: [ADD SOURCE LINK HERE]
+                </p>
 
-    <p class="bottom">Thanks for checking out my project!</p>
+            </div>
 
-</div>
 
-<script src="../script.js"></script>
-    
+            <div class="card">
+
+                <h2>Peer Support</h2>
+
+                <p>
+                    [ADD YOUR REAL PEER SUPPORT EXAMPLE HERE]
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>Use-Case Reflection</h2>
+
+                <p>
+                    [WRITE YOUR FIRST REFLECTION PARAGRAPH HERE]
+                </p>
+
+                <p>
+                    [WRITE YOUR SECOND REFLECTION PARAGRAPH HERE]
+                </p>
+
+                <p>
+                    [WRITE YOUR THIRD REFLECTION PARAGRAPH HERE]
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>What I Learned / What I'd Change</h2>
+
+                <p>
+                    [WRITE YOUR FINAL REFLECTION HERE]
+                </p>
+
+            </div>
+
+
+            <div class="bottom-duck">
+                
+            </div>
+
+        </section>
+
+    </main>
+
 </body>
+
 </html>
