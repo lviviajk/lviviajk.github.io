@@ -48,6 +48,10 @@
 
                 <h2>Project Overview</h2>
 
+                <div class="project-pictures">
+
+                    <img src="../images/reaction-final.jpeg">
+
                 <p>
                     For my Arduino final project, I made a reaction-time game.
                     The game uses a green LED, a red LED, a button, and a display
@@ -55,14 +59,11 @@
                     the reaction time and shows the result on the display.
                 </p>
 
-                <div class="project-pictures">
-
-                    <img src="../images/reaction-final.jpeg">
-
+ 
                 </div>
 
                 <p>
-                    [VIDEO OF PROJECT WORKING HERE]
+                    [VIDEO OF PROJECT WORKING]
                 </p>
 
             </div>
@@ -90,7 +91,7 @@
                 <h3>Starting the Circuit</h3>
 
                 <p>
-                    [EARLY CIRCUIT PHOTO HERE]
+                    [EARLY CIRCUIT PHOTO]
                 </p>
 
                 <p>
@@ -102,7 +103,7 @@
                 <h3>Adding the LEDs and Button</h3>
 
                 <p>
-                    [LED AND BUTTON PHOTO HERE]
+                    [LED AND BUTTON PHOTO]
                 </p>
 
                 <p>
@@ -115,7 +116,7 @@
                 <h3>Adding the Display</h3>
 
                 <p>
-                    [DISPLAY PHOTO HERE]
+                    [DISPLAY PHOTO]
                 </p>
 
                 <p>
@@ -128,12 +129,12 @@
                 <h3>Testing the Display</h3>
 
                 <p>
-                    [DISPLAY TEST CODE PHOTO HERE]
+                    [DISPLAY TEST CODE PHOTO]
                 </p>
 
                 <p>
                     I also wrote a small test program to figure out which pins
-                    controlled each line of the display. I turned different
+                    controlled each line of the display. It turns on different
                     lines on one at a time and used the results to figure out
                     how the display was wired.
                 </p>
@@ -142,7 +143,7 @@
                 <h3>Complete Circuit</h3>
 
                 <p>
-                    [COMPLETED CIRCUIT PHOTO HERE]
+                    [COMPLETED CIRCUIT PHOTO]
                 </p>
 
                 <p>
@@ -160,7 +161,7 @@
                 <h3>Controlling the LEDs</h3>
 
                 <p>
-                    [LED CODE PHOTO HERE]
+                    [LED CODE PHOTO]
                 </p>
 
                 <p>
@@ -173,7 +174,7 @@
                 <h3>Reading the Button</h3>
 
                 <p>
-                    [BUTTON CODE PHOTO HERE]
+                    [BUTTON CODE PHOTO]
                 </p>
 
                 <p>
@@ -186,16 +187,7 @@
                 <h3>Measuring Reaction Time</h3>
 
                 <p>
-                    [REACTION TIME CODE PHOTO HERE]
-                </p>
-
-                <p>
-                    The basic process is:
-                </p>
-
-                <p>
-                    Start time → Player waits → Button pressed →
-                    End time → Reaction time
+                    [REACTION TIME CODE PHOTO]
                 </p>
 
                 <p>
@@ -207,7 +199,7 @@
                 <h3>Showing the Result on the Display</h3>
 
                 <p>
-                    [DISPLAY CODE PHOTO HERE]
+                    [DISPLAY CODE PHOTO]
                 </p>
 
                 <p>
@@ -221,78 +213,6 @@
             <div class="card">
 
                 <h2>Debugging / What Didn't Work</h2>
-
-                <h3>The Problem</h3>
-
-                <p>
-                    [ADD YOUR REAL PROBLEM HERE]
-                </p>
-
-                <h3>What I Tried</h3>
-
-                <p>
-                    [ADD WHAT YOU TRIED HERE]
-                </p>
-
-                <h3>What I Changed</h3>
-
-                <p>
-                    [ADD WHAT YOU CHANGED HERE]
-                </p>
-
-                <h3>What Happened</h3>
-
-                <p>
-                    [ADD WHAT HAPPENED AFTERWARD HERE]
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h2>Technical Tidbit</h2>
-
-                <p>
-                    The Arduino measures reaction time by recording a starting
-                    time and then recording another time when the player presses
-                    the button. It subtracts the two times to find how long the
-                    player took to react.
-                </p>
-
-                <p>
-                    GAME STARTS<br>
-                    ↓<br>
-                    Starting time recorded<br>
-                    ↓<br>
-                    Player waits<br>
-                    ↓<br>
-                    Button pressed<br>
-                    ↓<br>
-                    Button press time recorded<br>
-                    ↓<br>
-                    Times are subtracted<br>
-                    ↓<br>
-                    Reaction time calculated<br>
-                    ↓<br>
-                    Result shown on display
-                </p>
-
-                <p>
-                    Source: [ADD SOURCE LINK HERE]
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h2>Peer Support</h2>
-
-                <p>
-                    [ADD YOUR REAL PEER SUPPORT EXAMPLE HERE]
-                </p>
-
             </div>
 
 
@@ -301,16 +221,15 @@
                 <h2>Use-Case Reflection</h2>
 
                 <p>
-                    [WRITE YOUR FIRST REFLECTION PARAGRAPH HERE]
+                    A reaction-time device like this could be useful for athletes who want to practice and measure their reflexes. It could also be used as a simple way to compare reaction times during training.
                 </p>
 
                 <p>
-                    [WRITE YOUR SECOND REFLECTION PARAGRAPH HERE]
+                    To make my current project more useful for this, I would add multiple rounds and have the Arduino calculate the person's average reaction time. I could also add a way to save previous scores so someone could see if their reaction time changes over time.
                 </p>
 
                 <p>
-                    [WRITE YOUR THIRD REFLECTION PARAGRAPH HERE]
-                </p>
+                    The skill I would rely on most is wire management. If I kept developing the project, I would probably add more components, which would mean even more wires. Keeping the wires organized and making sure I know where each one goes would make it easier to build onto the project and would make it easier to code.
 
             </div>
 
@@ -320,7 +239,8 @@
                 <h2>What I Learned / What I'd Change</h2>
 
                 <p>
-                    [WRITE YOUR FINAL REFLECTION HERE]
+                    In the end, this project taught me how to combine different components to make a complete interactive device. I learned how to use a seven-segment display by testing each pin and figuring out which part of the display it controlled. I also learned how to use a button as an input and connect it with the LEDs and display through my code. Building the reaction-time game helped me understand how the circuit and code work together to make the Arduino respond to what the user does. In the future, I would like to experiment with larger displays or a four-digit display so I could show larger numbers and more information.
+
                 </p>
 
             </div>
